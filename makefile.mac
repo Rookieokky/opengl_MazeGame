@@ -1,0 +1,4 @@
+.PHONY : a.out
+cflags = -framework GLUT -framework OpenGL -g
+a.out : main.c
+	g++ $(cflags) main.c
